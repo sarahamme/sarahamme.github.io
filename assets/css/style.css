@@ -1,0 +1,108 @@
+body {
+    background-image:url("../images/background.jpg");
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+
+}
+h1{
+    color: white;
+    font-size: 60px;
+    margin: 20px;
+    opacity: 1;
+    font-family: 'Roboto Mono', monospace;
+}
+nav {
+        background-color: rgb(141, 157, 183, 0.7);
+        padding: 5px;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        border: 2px solid black;
+        border-radius: 50px 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #8d9db7;
+    opacity: .6;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: rgb(141, 157, 183);
+}
+ /* unvisited link */
+a:link {
+    color: black;
+}
+
+.aboutme{
+    background-color: rgba(234, 240, 249,0.7);
+    border-radius: 50px 20px;
+    height: 700;
+    font-family: 'Roboto Mono', monospace;
+    margin: 15px;
+    padding: 15px;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+ 
+}
+#mainpic{
+    width: 175px;
+    height: 250px;
+    border-radius: 50px 20px ;
+    padding: 20px;
+    float:left;
+    
+} 
+
+h2{
+    font-size: 30px;
+}
+
+form {
+    border-radius: 50px 20px;
+    font-family: 'Roboto Mono', monospace;
+    opacity: .9;
+    padding: 30px;
+    margin: 30px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #8d9db7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:#8d9db7;
+
+}
+
+.container a:hover {
+    border-radius: 5px;
+    padding: 20px;
+}
