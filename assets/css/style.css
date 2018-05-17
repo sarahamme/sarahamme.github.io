@@ -55,6 +55,7 @@ a:link {
     float: right;
     font-size: 15px;
     text-align: left;
+    line-height: 25px;
  
 }
 #mainpic{
@@ -105,4 +106,22 @@ input[type=submit]:hover {
 .container a:hover {
     border-radius: 5px;
     padding: 20px;
+}
+
+h3{
+    /* background-color: white; */
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 50px 20px;
+}
+
+.fas{
+    font-size: 20px;
+    background-color: white;
+    opacity: .9;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 50px 20px;
+    padding: 20px;
+    align-content: center;
 }
