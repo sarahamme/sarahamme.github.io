@@ -1,3 +1,4 @@
+
 body {
     background-image:url("../images/background.jpg");
     background-attachment: fixed;
@@ -5,53 +6,54 @@ body {
     background-size: cover;
 
 }
-h1{
-    color: white;
-    font-size: 60px;
-    margin: 20px;
-    opacity: 1;
-    font-family: 'Roboto Mono', monospace;
-}
-nav {
-        background-color: rgb(141, 157, 183, 0.7);
-        padding: 5px;
+
+.navbar {
+        background-color: rgb(141, 157, 183, 0.7) !important;
+        font-size:15px !important;
         font-family: 'Roboto Mono', monospace;
         color: black;
         border: 2px solid black;
         border-radius: 50px 20px;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
+.navbar-default {
+    color: rgb(141, 157, 183, 0.7) !important;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+.navbar-item {
+    background-color: rgb(141, 157, 183, 0.7) !important;
+    padding: 5px !important;
+    font-family: 'Roboto Mono', monospace !important;
+    color: black !important;
+    border: 2px solid black !important;
+    border-radius: 50px 20px !important;
+}
+/* Style the links inside the navigation bar */
+
 /* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #8d9db7;
-    opacity: .6;
+.nav-item a:hover {
+    background-color: #8d9db7 !important;
+    opacity: .6 !important;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
-    background-color: rgb(141, 157, 183);
+.nav-item a.active {
+    background-color: rgb(141, 157, 183) !important;
 }
- /* unvisited link */
-a:link {
-    color: black;
+
+.navbar-nav a:hover{
+    background-color: #8d9db7 !important;
+    opacity: .6 !important ; 
 }
 
 .aboutme{
     background-color: rgba(234, 240, 249,0.7);
     border-radius: 50px 20px;
-    height: 700;
+    height: 900;
     font-family: 'Roboto Mono', monospace;
-    margin: 15px;
-    padding: 15px;
+    margin: 30px;
+    padding: 20px;
     float: right;
     font-size: 15px;
     text-align: left;
@@ -116,7 +118,7 @@ h3{
     border-radius: 50px 20px;
 }
 
-.fas{
+/* .fas{
     font-size: 20px;
     background-color: white;
     opacity: .9;
@@ -124,4 +126,13 @@ h3{
     border-radius: 50px 20px;
     padding: 20px;
     align-content: center;
+} */
+#photography{
+    background-color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    margin: 1%;
+}
+#wireframe {
+    padding: 110px;
+margin: 4%;
 }
