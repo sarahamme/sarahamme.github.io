@@ -51,7 +51,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color: #073655;
   text-decoration: underline;
 }
 
@@ -81,17 +81,17 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #073655;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #073655;
   color: #fff;
 }
 
 .btn {
-  background: #333;
+  background: #073655;
   border: medium none;
   border-radius: 0;
   color: #fff;
@@ -103,7 +103,10 @@ p {
 }
 
 .btn:hover, .btn:focus {
-  color: #fff;
+  background: white;
+  color: #073655;
+  border: #073655;
+  border-radius: 2px;
 }
 
 .padDiv {
@@ -111,11 +114,13 @@ p {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+ 
 }
 
 .section-title h2 {
   font-size: 25px;
+
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -155,12 +160,106 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+  background: #073655;
 }
 
 .mb-30 {
   margin-bottom: 30px;
 }
+
+
+
+
+/* That's it: */
+
+
+.scroll {
+  position: absolute;
+  bottom: 12%;
+
+  width: 30px;
+  height: 30px;
+}
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 30;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+  
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  Navbar Top
@@ -171,7 +270,7 @@ nav {
   background: #fff;
   z-index: 1000;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   display: none;
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
@@ -230,7 +329,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/home-bg.jpg") repeat scroll center center / cover;
+  background: url("../images/background-2\ copy.jpg") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
@@ -246,7 +345,7 @@ nav ul li a {
 }
 
 .header-content h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -254,13 +353,13 @@ nav ul li a {
 }
 
 .header-content p {
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: 5px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: capitalize;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .header-content .list-social li {
@@ -271,6 +370,7 @@ nav ul li a {
 .header-content .list-social li i {
   color: #fff;
   font-size: 15px;
+  font-size: 20px;
 }
 ul {
   list-style: none;
@@ -278,7 +378,7 @@ ul {
 .ul-head{
   font-size: 18px;
   text-align: left;
-  color:black;
+  color:blalock;
 }
 /*-----------------------------------------------------------------------------------*/
 /*  About-Me
@@ -299,7 +399,7 @@ ul {
 #about .div-img-bg .about-img img {
   width: 100%;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
+  margin-top: -40px;
   margin-left: 40px;
   height: 400px;
   object-fit: cover;
@@ -318,13 +418,13 @@ ul {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*   Services
+/*   Skills
 /*-----------------------------------------------------------------------------------*/
 
 #services {
   background: #f7f7f7;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .owl-item {
@@ -391,6 +491,7 @@ ul {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
+  background: #f7f7f7;
 }
 
 #portfolio .portfolio-list {
@@ -421,7 +522,7 @@ ul {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #b8a07e;
+  color: #073655;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -456,8 +557,9 @@ ul {
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   overflow: hidden;
+  padding: 40px;
 }
-#hike{
+#dev{
   border-radius: 4px;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -466,23 +568,32 @@ ul {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#hike-button {
-  background-color:black;
+#dev-button {
+  background-color:#073655;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 15px 32px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   transition: .4s;
 }
 
-#hike-button:hover {
-  background: #073655;
-  color: white;
-  border: white;
+#dev-button:hover {
+  background: white;
+  color: #073655;
+  border: #073655;
+  border-radius: 2px;
 }
+
+#work-seperator {
+  background: #000000;
+  border-radius: 3px;
+  width: 400px;
+}
+
+
 /*-----------------------------------------------------------------------------------*/
 /*  Contact
 /*-----------------------------------------------------------------------------------*/
@@ -580,7 +691,7 @@ ul {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #073655;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -687,44 +798,67 @@ ul {
   font-weight: 500;
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Beats on a Budget
-/*-----------------------------------------------------------------------------------*/
-#beats-header {
-  background: url("../images/concerts.jpg") repeat scroll center center / cover;
-  /* height: 100vh;
-  width: 100%; */
-}
-
-#beats-header .beats-header-content {
-  height: 100vh;
-  text-align: right;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.git-local {
   color: white;
-}
-.beats-header-content h1 {
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: white;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.beats-header-content p {
   font-size: 20px;
-  letter-spacing: 5px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  color: white;
-  font-weight: 500;
 }
+
+#services-locality {
+  padding: 20px;
+}
+
+.overview-icons {
+  font-size:50px;
+  color:black;
+}
+
+
+
+.research-container {
+  padding: 30px;
+  padding-bottom: 30px;
+
+  background: #f7f7f7;
+}
+
+.interaction {
+  background: #f7f7f7;
+  width: 75%;
+}
+
+.col-sm-3 {
+  padding-top: 25px;
+}
+
+.user-flow {
+  padding: 25px;
+}
+
+.ui-dev {
+  background: #f7f7f7;
+  padding:60px;
+}
+
+.dev-team {
+  background:#f7f7f7;
+  
+}
+
+.retrospect {
+  padding-bottom: 100px;
+}
+
+.team-pics {
+  border-radius: 70px;
+  /* height:50%;
+  width: 50%;
+  */
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Poll Pal CSS
+/*-----------------------------------------------------------------------------------*/
+
+
 
