@@ -826,9 +826,7 @@ ul {
   width: 75%;
 }
 
-.col-sm-3 {
-  padding-top: 25px;
-}
+
 
 .user-flow {
   padding: 25px;
@@ -841,7 +839,7 @@ ul {
 
 .dev-team {
   background:#f7f7f7;
-  
+
 }
 
 .retrospect {
